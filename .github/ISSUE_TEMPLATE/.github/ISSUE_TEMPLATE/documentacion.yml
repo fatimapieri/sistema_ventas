@@ -1,0 +1,17 @@
+name: Documentación
+description: Sugerencias o problemas relacionados con la documentación del proyecto.
+title: "[Docs] Breve descripción del cambio"
+labels: ["documentación"]
+body:
+  - type: textarea
+    attributes:
+      label: ¿Qué parte de la documentación necesita cambiar o añadirse?
+      placeholder: Ejemplo: El archivo README.md no explica cómo iniciar sesión.
+  - type: textarea
+    attributes:
+      label: Justificación
+      placeholder: ¿Por qué es importante esta mejora?
+  - type: textarea
+    attributes:
+      label: Propuesta de mejora
+      placeholder: Ejemplo: Agregar sección en README con los pasos para login.

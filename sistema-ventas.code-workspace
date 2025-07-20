@@ -1,0 +1,16 @@
+{
+<<<<<<< HEAD
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+=======
+    "folders": [
+        {
+            "path": ".github"
+        }
+    ]
+>>>>>>> eb047c7 (Cambios semanales - 2025-07-19)
+}
