@@ -3,6 +3,8 @@ let usuarios = [];
 let formLogin = document.getElementById('form-login');
 let message = document.getElementById('message');
 let modoRegistroCB = document.getElementById('modoRegistro');
+let sectionProductos = document.getElementById('productos');
+let sectionVentas = document.getElementById('ventas');
 
 formLogin.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -48,5 +50,8 @@ formLogin.addEventListener('submit', function (event) {
 });
 
 function mostrarSecciones() {
+    sectionProductos.style.display = 'block';
+    sectionVentas.style.display = 'block';
+
     document.getElementById('auth').style.display = 'none';
 }
