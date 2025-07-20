@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Sistema de Ventas</title>
+</head>
+
+<body>
+    <h1>Sistema de Gestión de Ventas</h1>
+
+    <section id="auth">
+        <h2>Registro / Login</h2>
+
+        <!-- Checkbox para elegir si registrar o solo iniciar sesión -->
+        <label>
+            <input type="checkbox" id="modoRegistro">
+            Quiero registrarme
+        </label>
+
+        <form id="form-login">
+            <input type="text" id="username" placeholder="Usuario" required />
+            <input type="password" id="password" placeholder="Contraseña" />
+            <button type="submit">Continuar</button>
+        </form>
+        <p id="message"></p>
+    </section>
+
+    <section id="productos" style="display:none;">
+        <h2>Alta de Productos</h2>
+        <form id="form-producto">
+            <input type="text" id="nombreProducto" placeholder="Nombre" required />
+            <input type="text" id="descripcionProducto" placeholder="Descripción" required />
+            <input type="number" id="precioProducto" placeholder="Precio" required />
+            <input type="number" id="stockProducto" placeholder="Stock" required />
+            <button type="submit">Agregar Producto</button>
+        </form>
+        <p id="mensajeProducto"></p>
+    </section>
+
+     <section id="ventas" style="display:none;">
+        <h2>Venta de Productos</h2>
+        <form id="form-venta">
+            <input type="text" id="productoVenta" placeholder="Nombre Producto" required />
+            <input type="number" id="cantidadVenta" placeholder="Cantidad" required />
+            <button type="submit">Comprar</button>
+        </form>
+        <p id="mensajeVenta"></p>
+    </section>
+
+
+    <script src="./js/login.js"></script>
+    <script src="./js/productos.js"></script>
+    <script src="./js/ventas.js"></script>
+</body>
+
+</html>
