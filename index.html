@@ -23,10 +23,23 @@
             <input type="password" id="password" placeholder="Contraseña" />
             <button type="submit">Continuar</button>
         </form>
-
         <p id="message"></p>
     </section>
+
+    <section id="productos" style="display:none;">
+        <h2>Alta de Productos</h2>
+        <form id="form-producto">
+            <input type="text" id="nombreProducto" placeholder="Nombre" required />
+            <input type="text" id="descripcionProducto" placeholder="Descripción" required />
+            <input type="number" id="precioProducto" placeholder="Precio" required />
+            <input type="number" id="stockProducto" placeholder="Stock" required />
+            <button type="submit">Agregar Producto</button>
+        </form>
+        <p id="mensajeProducto"></p>
+    </section>
+
     <script src="./js/login.js"></script>
+    <script src="./js/productos.js"></script>
 </body>
 
 </html>
