@@ -25,13 +25,10 @@ else
     # Subir a la rama actual
     git push origin $(git rev-parse --abbrev-ref HEAD)
 
-    # Calcular cuántas líneas se modificaron en el último commit
+   
     LINEAS=$(git diff --shortstat HEAD~1 HEAD | awk '{for(i=1;i<=NF;i++) if ($i ~ /^[0-9]+$/) total += $i} END {print total}')
-
-    # Guardar el resumen en el README
     echo "[$FECHA] Se modificaron $LINEAS líneas." | tee -a README.md
 
-    # Agregar y subir el README actualizado
     git add README.md
     git commit -m "Actualización automática: resumen de líneas modificadas - $FECHA"
     git push origin $(git rev-parse --abbrev-ref HEAD)
